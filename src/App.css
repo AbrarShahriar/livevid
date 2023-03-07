@@ -1,0 +1,29 @@
+.app {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(214, 213, 213);
+  border-radius: 5px;
+  padding: 20px;
+  width: 90%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+}
+
+button {
+  width: 100px;
+  padding: 5px;
+  font-weight: bold;
+}

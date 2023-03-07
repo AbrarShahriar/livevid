@@ -1,0 +1,68 @@
+.vid__wrapper {
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  padding: 2px;
+}
+
+.camera {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: max-content;
+  height: 100px;
+}
+
+.controls {
+  position: absolute;
+  z-index: 999;
+  top: 110%;
+  left: 50%;
+}
+
+.call__cut {
+  background-color: rgb(235, 56, 56);
+  border-radius: 50%;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.call__receive {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(56, 235, 116, 0.911);
+  border-radius: 50%;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: black;
+}
+
+.calling {
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
