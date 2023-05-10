@@ -1,25 +1,25 @@
-import React, { useEffect, useState } from "react";
-import { HiPhoneMissedCall } from "react-icons/hi";
+import React, { useState } from "react";
 import { BiPhoneCall } from "react-icons/bi";
+import { HiPhoneMissedCall } from "react-icons/hi";
+import { ThreeDots } from "react-loader-spinner";
 import ReactPlayer from "react-player";
-import "./Wrapper.scss";
-import Webcam from "react-webcam";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import Webcam from "react-webcam";
 // @ts-ignore
 import ringtone from "../assets/ringtone.mp3";
-import { ThreeDots } from "react-loader-spinner";
+import "./Portrait.scss";
 
 const videoConstraints = {
   facingMode: "user",
 };
 
-const VideoWrapper = ({ url }) => {
+const Portrait = ({ url }) => {
   const navigate = useNavigate();
   const [params] = useSearchParams();
   const [callReceived, setCallReceived] = useState(false);
 
   return (
-    <div className={`vid__wrapper ${callReceived && "received"}`}>
+    <div className={`portrait ${callReceived && "received"}`}>
       {callReceived ? (
         <>
           <div className="name">{params.get("name") || "Samiha Tabassum"}</div>
@@ -29,8 +29,6 @@ const VideoWrapper = ({ url }) => {
             muted
             playing
             controls={false}
-            width="100%"
-            height="100%"
             className={`video`}
             pip={false}
           />
@@ -72,4 +70,4 @@ const VideoWrapper = ({ url }) => {
     </div>
   );
 };
-export default VideoWrapper;
+export default Portrait;
