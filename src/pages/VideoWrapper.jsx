@@ -19,7 +19,7 @@ const VideoWrapper = ({ url }) => {
   const [callReceived, setCallReceived] = useState(false);
 
   return (
-    <div className="vid__wrapper">
+    <div className={`vid__wrapper ${callReceived && "received"}`}>
       {callReceived ? (
         <>
           <div className="name">

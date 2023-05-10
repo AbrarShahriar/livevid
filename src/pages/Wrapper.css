@@ -1,5 +1,12 @@
 .vid__wrapper {
   position: relative;
+  background: url("../assets/pic.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.received {
+  background: none;
+  background-color: black;
 }
 
 .name {
